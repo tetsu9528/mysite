@@ -1,0 +1,296 @@
+@charset "utf-8";
+/*全体設定*/
+html {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #000000;
+}
+img {
+  border-radius: 8px;
+}
+h1 {
+  border-bottom: 4px solid #000000;
+}
+
+h1 a {
+  margin-left: 64px;
+  color: #000;
+}
+main {
+  display: flex;
+  margin: 0 24px;
+  padding: 0;
+}
+
+/*box-left*/
+.box-left {
+  width: 70%;
+  padding: 64px;
+}
+.self-introduction {
+  margin: 0 32px;
+}
+.contents {
+  display: block;
+}
+.content {
+  padding: 16px 0;
+  margin-bottom: 8px;
+  border: 2px solid #dcdcdc;
+  border-radius: 8px;
+  transition-duration: 0.5s;
+}
+.content:hover {
+  background-color: #dcdcdc;
+}
+.content img {
+  width: 240px;
+  height: 180px;
+  margin: 16px;
+}
+.content a {
+  display: flex;
+  padding: 16px;
+}
+.content p {
+  margin: 24px auto;
+  font-size: 24px;
+  font-weight: bold;
+ width:50%;
+}
+
+/*box-right*/
+
+.box-right {
+  width: 30%;
+  text-align: center;
+  padding: 16px;
+}
+.box-right img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.icon img {
+  border-radius: 50%;
+  width: 30%;
+  height: auto;
+  text-align: center;
+}
+.site img {
+  transition-duration: 0.5s;
+}
+.site img:hover {
+  transform: scale(1.1, 1.1);
+}
+.sns a {
+  display: inline-block;
+  border: 1px solid #000000;
+  padding: 16px 32px;
+  width: 50%;
+  text-decoration: none;
+  color:#000000;
+}
+#x,
+#masyumaro,
+#crepu,
+#fanbox {
+  transition-duration: 0.5s;
+}
+#x {
+  border-color: #000000;
+}
+#fanbox {
+  border-color: #3cb371;
+}
+#masyumaro {
+  border-color: #ffb6c1;
+}
+#crepu {
+  border-color: #ffd700;
+}
+#x:hover,
+#masyumaro:hover,
+#crepu:hover,
+#fanbox:hover {
+  color: #ffffff;
+}
+#x:hover {
+  background-color: #000000;
+}
+#fanbox:hover {
+  background-color: #3cb371;
+}
+#masyumaro:hover {
+  background-color: #ffb6c1;
+}
+#crepu:hover {
+  background-color: #ffd700;
+}
+
+/*Circle*/
+.Works {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 8px auto;
+  height: fit-content;
+}
+
+.Work {
+  width: calc(90% / 3);
+  height: auto;
+}
+.Work-header {
+  margin-left: 32px;
+}
+.Work img {
+  width: 100%;
+}
+.Work a {
+  transition-duration: 0.5s;
+}
+.Work a:hover {
+  transform: scale(1.1, 1.1);
+}
+
+/*article*/
+.box-left.article {
+  text-align: center;
+}
+.article-header {
+  width: 80%;
+  height: auto;
+}
+.start {
+  width: 80%;
+  margin: 32px auto;
+}
+.table {
+  border: 1px solid #ffffff;
+}
+.table h2 {
+  margin-left: 32px;
+}
+
+li {
+  list-style-type: square;
+  text-align: left;
+}
+li a{
+  color: #000000;
+}
+.table a {
+  text-decoration: none;
+}
+.table a:hover {
+  background-color: #cccccc;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 32px;
+}
+
+@media (max-width: 800px) {
+  /*全体設定*/
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  img {
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    margin: 0;
+    padding-top: 32px;
+  }
+  h2 {
+    padding-top: 32px;
+    margin: 0;
+  }
+
+  /*box-left*/
+
+  main {
+    display: block;
+    text-align: center;
+    margin: 32px auto;
+  }
+  .box-left {
+    width: 100%;
+    padding: 0;
+  }
+  .content {
+    width: 80%;
+    margin: 32px auto;
+  }
+  .content p {
+    font-size: 16px;
+    padding: 8px;
+  }
+  .content img {
+    width: 160px;
+    height: 120px;
+    margin: 32px auto;
+  }
+
+  /*box-right*/
+
+  .box-right {
+    width: 100%;
+    padding: 0;
+  }
+  .site {
+    width: 50%;
+    margin: 8px auto;
+  }
+  .site img {
+    width: 80%;
+  }
+  .site p {
+    text-align: center;
+  }
+
+  /*circle*/
+  .Works{
+    margin: 0 auto;
+  }
+  .Works.Work {
+    width: calc(90% / 2);
+    padding-left: 2px;
+    margin: 8px;
+  }
+  .Work-header {
+    margin: auto 24px;
+  }
+
+  /*article*/
+
+  .article-header {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
