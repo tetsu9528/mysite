@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <h1>
-      <a href="/">mySite</a>
+      <a href="/MySite">mySite</a>
     </h1>
   );
 };

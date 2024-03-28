@@ -14,7 +14,7 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/MySite" element={<HomePage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/circle" element={<CirclePage />} />
           <Route path="/mycircle" element={<MyCirclePage />} />
